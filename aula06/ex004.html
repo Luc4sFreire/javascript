@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+    <style>
+        body{
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome =  prompt('Qual é seu nome?')
+        var salario = parseFloat(prompt('Digite seu salário:'))
+        var a = 5 + 2
+        var b = a - 6
+        var c = (b + 3)**2/2
+        var d = c**3*6
+        var e = d%2
+        var f = (a + b/c)**2/d+e
+        document.write(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras.<br>`)
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}<br>`)
+        document.write(`E seu nome em minúsculas é ${nome.toLowerCase()}<br>`)
+        document.write(`O seu salário é de ${salario.toLocaleString('pt-BR', {style: 'currency' ,currency: 'BRL'})}, de ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})} em dólar e em euro é de ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})}<br>`) 
+        document.write(`${a}, ${b}, ${c} e ${d}<br>`)
+        if(e == 0){
+            document.write(`${e} é par!<br>`)
+        }else{
+            document.write(`${e} é impar!<br>`)
+        }
+
+        document.write(`A equação (${a} + ${b} / ${c})**2 / ${d} + ${e} eh igual a ${f}`)
+    </script>
+</body>
+</html>
