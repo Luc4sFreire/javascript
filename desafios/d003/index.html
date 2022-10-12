@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 003</title>
+</head>
+<body>
+    <h1>Antecessor e Sucessor</h1>
+    <button id="btn" onclick="verificar()">Inicie o desafio</button>
+    <script>
+        function verificar(){
+            let btn = document.querySelector('#btn')
+            let n1 = parseInt(prompt('Digite um número inteiro!'))
+            let n2 = n1
+            let n3 = n1
+            n2--
+            n3++
+            alert(`Antes de ${n1}, temos o número ${n2} e depois de ${n1}, temos o número ${n3}`);
+        }
+    </script>
+</body>
+</html>
